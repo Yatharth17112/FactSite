@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+    font-family: Sofia Pro;
+    font-weight:300;
+}
+body, ul, li{
+    margin:0;
+    padding:0;
+}
+li, h1, h2, h3, h4{
+    color:darkslategrey;
+
+}
+            p{
+                font-size: 22px;
+            }            
+body{
+    background-color:aquamarine;
+}
+.wrapper{
+    width:96%;
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 2%;
+}
+header{
+    background-color:darkseagreen;
+    padding:10px 0;
+}
+.logo{
+    margin:0;
+    
+    background: url(logo.png);
+    background-size:70px 70px;
+    float:left;
+    width:70px;
+    height:70px;
+}
+header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header nav{
+    float:right;
+}
+
+header nav li{
+    list-style-type:none;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+header nav li a{
+    text-decoration:none;
+    color:darkslategrey;
+    font-size:15px;
+    text-transform: uppercase;
+}
+            type="text/css" data-fbcssmodules="css:fb.css.basecss:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+            
+            
+            
+            #Greeting {
+                text-decoration: none;
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                 }
+               #main-banner {
+                width: 100%;
+                max-height: 500px;
+                overflow: hidden;
+            }
+            #main-banner img {
+                width: 50%;
+            }
+            #slider {
+                overflow: hidden;
+            }
+            #slides {
+                position: relative;
+                width: 325%;
+                margin: 0;
+                left: 0;
+                text-align: left;
+                font-size: 0;
+                animation: 18s slidy infinite;
+            }
+            #slides img {
+                width: 20%;
+                float: left;
+            }
+            #usp {
+                margin-top: 60px;
+            }
+            #usp li{
+                float: left;
+                width: 23%;
+                padding: 1%;
+                text-align: center;
+                list-style-type: none;
+            }
+            #usp li img {
+                height: 80px;
+                padding: 20px;
+                background-color: coral;
+                border-radius: 50%;
+            }
+            #usp li h2 {
+                font-size: 16px;
+                font-weight: 400;
+            }
+            #usp:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            #products {
+                padding-top: 30px;
+                font-size: 50px;
+                align-content: center;
+                margin-top: 30px;
+                border-top: 2px solid lightgrey;
+                
+            }
+            #products li {
+                float: left;
+                width: 32%;
+                font-size: 20px;
+                align-content: center;
+                list-style-type: none;
+                text-align: center;
+            }
+            #products li img {
+                width: 100%;
+            }
+            #products li:nth-child(even) {
+                margin: 0 1%;
+            }
+            #products:after {
+                content: "";
+                display: block;
+                align-content: center;
+                font-size: 50px;
+                clear: both;
+            }
+            #our-products {
+                text-align: center;
+            }
+            footer{
+    width:100%;
+    background-color: darkslategrey;
+    padding: 30px 0;
+    margin-top:60px;
+}
+footer ul{
+    float:left;
+    width:48%;
+    margin:1%;
+}
+footer ul h3{
+    font-size:30px;
+    color: azure;
+}
+footer ul li{
+    list-style-type: none;
+    font-size:15px;
+    color: azure;
+}
+footer:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+            
+            /* Animation */
+            @keyframes slidy {
+                0% { left: 0%; }
+                28% { left: 0%; }
+                33% { left: -100%; }
+                61% { left: -100%; }
+                66% { left: -200%; }
+                94% { left: -200%; }
+                100% { left: 0%; }
+            }
+            
+            .greet{
+                background-color: #48C9B0;
+                font-family: fantasy;
+                font-size: 20px;
+                color: white;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                text-align: center;
+                width: 100%;
+                
+                
+            }
+            Facts{
+                align-content: center;
+                color: black;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header Starts -->
+        <header>
+            <div class="wrapper">
+                <nav>
+                    <div class="menu"></div>
+                    <ul>
+                     
+                    </ul>
+                </nav>
+            </div>
+<div class="Facts">
+<li><a href="Bulb%20program.html">Back to Mainpage</a></li>
+              
+            </div>
+        </header></body>
+</html>
+
+
+
+
+<div class="wrapper">
+            <section id="products">
+                <h2 id="our-products">All Facts</h2>
+                <h2 id="our-products">50 Facts</h2>
+                                        <p>
+                  1. Humans have been performing dentistry since 7000BC, which makes dentists one of the oldest professions.
+
+<p>2. The first-ever documented feature film was made in Australia in 1906.</p>
+
+                        <p>3. Ancient Roman surgeons were trained to block out the screams of human pain.</p>
+    
+    <p>4. From 1953 to 1957, NBC’s Today Show had a chimpanzee co-host named J. Fred Muggs. It is estimated he brought in the network around $100 million.</p>
+
+                        <p>5. Apples, peaches, and raspberries are all members of the rose family.</p>
+
+<p>6. There is a geocache on the International Space Station placed in 2008. It has since been visited four times by other astronauts.</p>
+
+<p>7. Canada eats more macaroni and cheese than any other nation in the world.</p>
+
+<p>8. Scotland wanted to replicate the Parthenon bigger and cheaper in 1826. It was never completed and is now nicknamed “Scotland’s Disgrace”.</p>
+                        <p>9. A French general gave John Quincy Adams a pet alligator. Adams kept it in one of the White House bathtubs and enjoyed showing it off.</p>
+
+<p>10. Snakes can help predict earthquakes. They can sense a coming earthquake from 75 miles away, up to five days before it happens.</p>
+
+<p>11. The hand and footprints in front of Los Angeles’s Chinese Theater tradition started accidentally when silent film actress, Norma Talmadge stepped on wet cement.</p>
+
+<p>12. An animal’s yawn based on how large their brain is. The bigger the brain, the longer they will yawn.</p>
+
+<p>13. In Switzerland, it is illegal to own just one guinea pig. This is because guinea pigs are social animals, and they are considered victims of abuse if they are alone</p>
+    
+    <p>14. There are more Lego mini-figures than there are people on Earth.</p>
+
+<p>15. Dinosaurs would swallow large rocks which stayed in their stomach to help churn and digest food.</p>
+    
+    <p>16. Surgeons who play video games at least 3 hours a week perform 27% faster and make 37% fewer errors.</p>
+
+<p>17. When cellophane was invented in 1908, it was originally intended to be used to protect tablecloths from wine spills.</p>
+
+<p>18. The mayor of a historical district in Alaska is a cat named Stubbs.</p>
+
+<p>19. In the 1980s, Fredric Baur, the founder of Pringles, requested to be buried in a Pringles can. His children honored the request.</p>                                                                                                                                                                                                                                                                       
+<p>20. You can now get a headstone with a QR code. Called “Living Headstones”, they show pages with photos, video biographies, and comments from loved ones.</p>
+                <p>21. The NYPD had a police officer follow Andre the Giant whenever he went out drinking. This was to make sure he didn’t get drunk and fall on anyone.</p>
+
+<p>22. A strawberry is not an actual berry, but a banana is.</p>
+
+<p>23. Hershey’s chocolate syrup, Ritz Crackers, DumDums, and Oreos are all vegan.</p>
+
+<p>24. The sound of a Star Wars lightsaber was created by pairing together the sound of an idle film projector and the buzz from an old TV set.</p>
+
+<p>25 .Your tonsils can grow back if there was tissue left behind during the removal process.</p>
+                
+                <p>26. In Israel, it is illegal to bring bears to the beach.</p>
+
+<p>27. There is an uninhabited island in the Bahamas known as Pig Beach, which is populated entirely by swimming pigs.</p>
+
+<p>28. Without saliva, humans are unable to taste food.</p>
+
+<p>29. It snowed in the Sahara desert for 30 minutes on February 18, 1979.</p>
+
+<p>30. In every scene of Fight Club, there is a Starbucks coffee cup.</p>
+
+<p>31. In Switzerland, it is illegal to flush the toilet after 10pm.</p>
+
+<p>32. William Shakespeare had a curse engraved on his tombstone to prevent anyone from moving his bones.</p>
+    <p>33. On Valentine’s Day in South Korea, only women give gifts, not men.</p>
+
+<p>34. Cookie Monster’s real name is Sid.</p>
+
+<p>35. March 3 is known as “What if Cats and Dogs Had Opposable Thumbs Day”.</p>
+
+<p>36. The largest living thing on earth is a giant sequoia named General Sherman.</p>
+
+<p>37. Elvis was originally blonde. He started dying his hair black for an edgier look. Sometimes, he would touch it up himself using shoe polish.</p>
+
+<p>38. Astronauts actually get taller when in space.</p>
+
+<p>39. In California, you can get a ticket if you’re driving too slow.</p>
+                
+                <p>
+                40. Snoop Dogg’s real name is Cordozar Calvin Broadus Jr. His nickname came from his mother who thought he looked like Snoopy from the Peanuts.</p>
+
+<p>41. Originally, the Eiffel Tower was going to be erected in Barcelona, but the project was rejected because citizens thought it was an eyesore.</p>
+
+<p>42. Kangaroos keep growing until they die.</p>
+
+                <p>43. A snail can sleep for 3 years.</p>
+
+<p>44. Females are better at distinguishing colors, while males excel at tracking fast-moving objects and discerning detail from a distance.</p>
+
+<p>45. The fear of vegetables is called Lachanophobia.</p>
+    <p>46. Lettuce is a member of the sunflower family.</p>
+
+<p>47. Using a hands-free device to talk on the phone while driving is shown to be equally or more dangerous than driving drunk.</p>
+
+<p>48. A group of horses will not go to sleep at the same time – at least one of them will stay awake to look out for the others.</p>
+
+<p>49. In Utah, birds have the right of way on a highway.</p>
+
+<p>50. Jellyfish are considered biologically immortal. They don’t age and will never die unless they are killed.</p>
+                    
+
+                <ul>
+                    <li>
